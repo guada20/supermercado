@@ -1,3 +1,7 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Combo',cursive;
+}
+
 .menu{
     width: 100%;
     height: 100px;
@@ -55,9 +59,10 @@
     justify-content: center;
 } 
 .principal .con-texto h1{
-    color: white;
+    color: red;
     font-size: 50px;
     font-weight: bold;
+    background-color: white;
 
 }
 .principal .con-texto p{
@@ -82,15 +87,108 @@
     width: 300px;
     text-align: center;
 }
-.descuento{
+.descuento,
+.productos,
+.servicios{
     width: 100%;
-    height: 300px;
+    height: auto;
     display: flex;
-    justify-content:center;
+    flex-direction: column;
     align-items:center;
+
 }
 .descuento img{
     width: 300px;
     height: auto;
     margin: 0 10px;
 }
+.titulo-des h2,
+.titulo-pro h2,
+.titulo-ser h2{
+    font-size:50px ;
+    color:red
+
+}
+/*productos*/
+.con-productos{
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.tarjeta{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+}
+.tarjeta .con-texto  h3{
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
+.tarjeta .con-texto p{
+    font-size: 20px;
+    text-align: center;
+}
+.tarjeta .botones{
+    display: flex;
+    justify-content: space-around;
+}
+.tarjeta .botones span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.tarjeta .botones a{
+    padding: 7px 12px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+/*servicios*/
+.con-servicios{
+    width: 100%;
+    height: auto;
+}
+.servicios-1,
+.servicios-2{
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.servicios-1 img,
+.servicios-2 img{
+      width: 50%;
+}
+.servicios-1  .con-texto,
+.servicios-2  .con-texto{
+    width: 50%;
+    margin-left: 30px;
+}      
+.servicios-1  .con-texto h3,
+.servicios-2  .con-texto h3{
+    font-size: 35px;
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}     
+.servicios-1  .con-texto p,
+.servicios-1  .con-texto ul,
+.servicios-2 .con-texto p,
+.servicios-2 .con-texto ul{
+    font-size: 25px;
+    color: black;
+    
+}                                                            
